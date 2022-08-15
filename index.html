@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Página de produtos</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        
-    </body>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de produtos</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1><img src="assets/logo.svg" alt="Logo"></h1>
+        <nav>
+            <ul class="listNavigation">
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <img src="assets/icon-cart.svg" alt="icone de carrinho">
+            <img src="assets/image-avatar.png" alt="Imagem avatar">
+        </div>
+        <section>
+            <h2>Cart</h2>
+            <div>
+                <img src="assets/image-product-1-thumbnail.jpg" alt="Image thumbnail">
+                <div>
+                    Fall Limited Edition Sneakears $125.00 X 3 $375.00
+                </div>
+                <button><img src="assets/icon-delete.svg" alt="Icone Remove"></button>
+            </div>
+            <button>Checkout</button>
+        </section>
+    </header>
+    <main>
+        <section>
+            <div>
+                <img src="assets/image-product-1.jpg" alt="Imagem 1 produto ">
+            </div>
+            <div>
+                <img src="assets/image-product-1-thumbnail.jpg" alt="Imagem 1 produto thumbnail">
+                <img src="assets/image-product-2-thumbnail.jpg" alt="Imagem 2 produto thumbnail">
+                <img src="assets/image-product-3-thumbnail.jpg" alt="Imagem 3 produto thumbnail">
+                <img src="assets/image-product-4-thumbnail.jpg" alt="Imagem 4 produto thumbnail">
+            </div>
+        </section>
+        <section>
+            <h2>SNEAKER COMPANY</h2>
+            <h1>Fall Limit Sneakers</h1>
+            <p>These low-profile sneakears are you perfect casual wear companion. Featuring a durable rubber outer sole.
+                they'll withstand evertything the weather can offer.</p>
+            <div>
+                <p>$125.00</p>
+                <p>$0%</p>
+            </div>
+            <p>R$250.00</p>
+
+            <div>
+                <div>
+                    <button><img src="assets/icon-minus.svg" alt="Icon Menos"></button>
+                    <input type="number" name="quantidade" value="1" id="quantidade">
+                    <button><img src="assets/icon-plus.svg" alt="Icone Mais"></button>
+                </div>
+                <button>
+                    <img src="assets/icon-cart.svg" alt="Icone Cart">
+                    <p>Add to cart</p>
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+
 </html>

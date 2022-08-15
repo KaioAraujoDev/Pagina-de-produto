@@ -1,4 +1,11 @@
-@use 'variables/variables.scss';
+
+@use 'resources/resources.scss';
 
 @use 'nav/nav.scss';
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+}
+
 
