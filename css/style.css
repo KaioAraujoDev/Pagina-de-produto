@@ -1,14 +1,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@500&display=swap");
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  padding: 0 10%;
+}
+
+/* Header */
 header {
   width: 100%;
   display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: hsl(220deg, 14%, 75%);
+  margin-bottom: 5%;
+}
+header h1.imgLogo {
+  margin-right: 5%;
+}
+header .divPerfil {
+  position: absolute;
+  right: 0;
 }
 
 .listNavigation {
   display: flex;
 }
+.listNavigation li {
+  margin-right: 15%;
+  height: 10em;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  transition: all 0.25s;
+}
+.listNavigation li:hover {
+  border-bottom: 0.2em solid hsl(26deg, 100%, 55%);
+  cursor: pointer;
+}
+.listNavigation li a {
+  color: hsl(219deg, 9%, 45%);
+  text-decoration: none;
+}
 
-body {
-  font-family: "Kumbh Sans", sans-serif;
-  font-weight: 400;
+.divPerfil {
+  display: flex;
+  align-items: center;
+}
+.divPerfil .divCart {
+  margin-right: 35%;
+  position: relative;
+}
+.divPerfil .divCart:hover {
+  cursor: pointer;
+}
+.divPerfil .cardCart {
+  display: none;
+}
+.divPerfil .qtItems {
+  position: absolute;
+  top: -15%;
+  right: -10%;
+  font-size: 0.5em;
+  background: hsl(26deg, 100%, 55%);
+  color: hsl(223deg, 64%, 98%);
+  padding: 0.2em 0.75em;
+  border-radius: 0.65em;
+  font-weight: 600;
+  display: block;
+}
+
+.imgPerfil {
+  width: 35%;
+  border: 1px solid hsl(26deg, 100%, 55%);
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

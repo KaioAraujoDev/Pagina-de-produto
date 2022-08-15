@@ -1,11 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@500&display=swap');
 
-@use 'resources/resources.scss';
+$orange : hsl(26, 100%, 55%);
+$orangePale : hsl(25, 100%, 94%);
 
-@use 'nav/nav.scss';
+$blueVeryVark : hsl(220, 13%, 13%);
+$blueGrayishDark : hsl(219, 9%, 45%);
+$blueGrayish: hsl(220, 14%, 75%);
+$blueGrayishLight: hsl(223, 64%, 98%);
+$white : hsl(223, 64%, 98%);
+$black : hsl(0, 0%, 0%);
 
-body{
+body {
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 400;
+    padding: 0 10%;
+   
 }
 
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: $blueGrayish;
+    margin-bottom: 5%;
 
+    h1.imgLogo {
+        margin-right: 5%;
+    }
+
+    .divPerfil {
+        position: absolute;
+        right: 0;
+    }
+}
+
+.listNavigation {
+    display: flex;
+
+    li {
+        margin-right: 15%;
+        height: 10em;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        transition: all .25s;
+    }
+
+    li:hover{
+        border-bottom: 0.2em solid $orange;
+        cursor: pointer;
+    }
+
+    li a {
+        color: $blueGrayishDark;
+        text-decoration: none;
+    }
+}
+
+.divPerfil {
+    display: flex;
+    align-items: center;
+
+    .divCart {
+        margin-right: 35%;
+        position: relative;
+    }
+
+    .divCart:hover{
+        cursor: pointer;
+    }
+    .cardCart {
+        display: none;
+
+    }
+
+    .qtItems {
+        position: absolute;
+        top: -15%;
+        right: -10%;
+        font-size: 0.5em;
+        background: $orange;
+        color: $white;
+        padding: 0.2em 0.75em;
+        border-radius: 0.65em;
+        font-weight: 600;
+        display: block;
+    }
+}
+
+.imgPerfil {
+    width: 35%;
+    border: 1px solid $orange;
+    border-radius: 50%;
+}
