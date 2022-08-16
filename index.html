@@ -21,27 +21,27 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-       
+
         <div class="divPerfil">
-            <div class="divCart">
+            <div class="divCart" id="cart">
                 <img src="assets/icon-cart-black.svg" alt="icone de carrinho">
                 <span class="qtItems">1</span>
             </div>
-            
-            <section class="cardCart">
+
+            <section class="cardCart" id="cardCart">
                 <h2>Cart</h2>
-                <div>
-                    <img src="assets/icon-cart-black.svg" alt="image-product-1-thumbnail.jpg" alt="Image thumbnail">
+                <div class="divItem">
+                    <img class="imgItem"src="assets/image-product-1-thumbnail.jpg" alt="image-product-1-thumbnail.jpg" alt="Image thumbnail">
                     <div>
-                        Fall Limited Edition Sneakears $125.00 X 3 $375.00
+                        Fall Limited Edition Sneakears $125.00 X 3 <strong>$375.00</strong>
                     </div>
-                    <button><img src="assets/icon-delete.svg" alt="Icone Remove"></button>
+                    <button><img class="iconRemove"src="assets/icon-delete.svg" alt="Icone Remove"></button>
                 </div>
                 <button>Checkout</button>
             </section>
             <img class="imgPerfil" src="assets/image-avatar.png" alt="Imagem avatar">
         </div>
-        
+
     </header>
     <main>
         <section>
@@ -80,5 +80,7 @@
         </section>
     </main>
 </body>
+<script src="js/main.js"></script>
+<script src="js/events.js"></script>
 
 </html>

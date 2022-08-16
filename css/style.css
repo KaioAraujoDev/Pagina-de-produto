@@ -55,8 +55,8 @@ header .divPerfil {
 .divPerfil .divCart:hover {
   cursor: pointer;
 }
-.divPerfil .cardCart {
-  display: none;
+.divPerfil .visible {
+  display: block;
 }
 .divPerfil .qtItems {
   position: absolute;
@@ -69,6 +69,49 @@ header .divPerfil {
   border-radius: 0.65em;
   font-weight: 600;
   display: block;
+}
+
+.cardCart {
+  display: none;
+  position: absolute;
+  top: 175%;
+  right: -20%;
+  background: white;
+  padding-bottom: 2em;
+  width: 225%;
+}
+.cardCart h2 {
+  font-weight: 600;
+  padding: 1em 0 1em 0.25em;
+  border-bottom: 1px solid #ccc;
+  padding: 1em;
+}
+.cardCart .divItem {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+}
+.cardCart .divItem .imgItem {
+  width: 15%;
+  border-radius: 0.25em;
+  margin-right: 0.85em;
+}
+.cardCart .divItem div {
+  font-size: 0.75em;
+  line-height: 1.5em;
+  color: hsl(219deg, 9%, 45%);
+  margin-right: 0.5em;
+}
+.cardCart .divItem div strong {
+  font-weight: 600;
+  color: black;
+}
+.cardCart .divItem button {
+  background: none;
+  border: none;
+}
+.cardCart .divItem .iconRemove {
+  width: 0.85em;
 }
 
 .imgPerfil {

@@ -73,11 +73,9 @@ header {
     .divCart:hover{
         cursor: pointer;
     }
-    .cardCart {
-        display: none;
-
+    .visible{
+        display: block;
     }
-
     .qtItems {
         position: absolute;
         top: -15%;
@@ -92,6 +90,50 @@ header {
     }
 }
 
+.cardCart {
+    display: none;
+    position: absolute;
+    top: 175%;
+    right: -20%;
+    background: white;
+    padding-bottom: 2em;
+    width: 225%;
+
+    h2{
+        font-weight: 600;
+        padding: 1em 0 1em 0.25em;
+        border-bottom: 1px solid #ccc;
+        padding: 1em;
+    }
+    .divItem{
+        padding:1em;
+        display: flex;
+        align-items: center;
+    }
+    .divItem .imgItem {
+        width: 15%;
+        border-radius: 0.25em;
+        margin-right: 0.85em;
+    }
+    .divItem div{
+        font-size: 0.75em;
+        line-height: 1.5em;
+        color:$blueGrayishDark;
+        margin-right: 0.5em;
+    }
+
+    .divItem div strong {
+        font-weight: 600;
+        color: black;
+    }
+    .divItem button{
+        background: none;
+        border: none;
+    }
+    .divItem .iconRemove {
+        width: 0.85em;
+    }
+}
 .imgPerfil {
     width: 35%;
     border: 1px solid $orange;
