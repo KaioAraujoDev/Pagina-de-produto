@@ -73,9 +73,7 @@ header {
     .divCart:hover{
         cursor: pointer;
     }
-    .visible{
-        display: block;
-    }
+   
     .qtItems {
         position: absolute;
         top: -15%;
@@ -89,15 +87,22 @@ header {
         display: block;
     }
 }
+.visible{
+    display: flex !important;
+}
 
 .cardCart {
     display: none;
+    flex-direction: column;
     position: absolute;
     top: 175%;
     right: -20%;
     background: white;
     padding-bottom: 2em;
     width: 225%;
+    box-shadow: 0 0.5em 1.25em #ccc;
+    border-radius: 0.5em;
+
 
     h2{
         font-weight: 600;
@@ -132,6 +137,13 @@ header {
     }
     .divItem .iconRemove {
         width: 0.85em;
+    }
+
+    .btn {
+        background: orange;
+        border: none;
+        margin: 0 auto;
+
     }
 }
 .imgPerfil {
