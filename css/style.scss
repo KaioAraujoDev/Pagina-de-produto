@@ -10,11 +10,13 @@ $blueGrayishLight: hsl(223, 64%, 98%);
 $white : hsl(223, 64%, 98%);
 $black : hsl(0, 0%, 0%);
 
+
+
 body {
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 400;
     padding: 0 10%;
-   
+
 }
 
 /* Header */
@@ -50,7 +52,7 @@ header {
         transition: all .25s;
     }
 
-    li:hover{
+    li:hover {
         border-bottom: 0.2em solid $orange;
         cursor: pointer;
     }
@@ -70,10 +72,10 @@ header {
         position: relative;
     }
 
-    .divCart:hover{
+    .divCart:hover {
         cursor: pointer;
     }
-   
+
     .qtItems {
         position: absolute;
         top: -15%;
@@ -87,7 +89,8 @@ header {
         display: block;
     }
 }
-.visible{
+
+.visible {
     display: flex !important;
 }
 
@@ -104,26 +107,29 @@ header {
     border-radius: 0.5em;
 
 
-    h2{
+    h2 {
         font-weight: 600;
         padding: 1em 0 1em 0.25em;
         border-bottom: 1px solid #ccc;
         padding: 1em;
     }
-    .divItem{
-        padding:1em;
+
+    .divItem {
+        padding: 1em;
         display: flex;
         align-items: center;
     }
+
     .divItem .imgItem {
         width: 15%;
         border-radius: 0.25em;
         margin-right: 0.85em;
     }
-    .divItem div{
+
+    .divItem div {
         font-size: 0.75em;
         line-height: 1.5em;
-        color:$blueGrayishDark;
+        color: $blueGrayishDark;
         margin-right: 0.5em;
     }
 
@@ -131,23 +137,85 @@ header {
         font-weight: 600;
         color: black;
     }
-    .divItem button{
+
+    .divItem button {
         background: none;
         border: none;
+    }
+
+    .divItem button:hover {
+        cursor: pointer;
     }
     .divItem .iconRemove {
         width: 0.85em;
     }
 
     .btn {
-        background: orange;
+        background: $orange;
         border: none;
         margin: 0 auto;
+        color: white;
+        font-weight: 600;
+        padding: 1em 7em;
+        border-radius: 0.5em;
 
     }
+    .btn:hover{
+        cursor: pointer;
+    }
 }
+
 .imgPerfil {
     width: 35%;
     border: 1px solid $orange;
     border-radius: 50%;
+}
+
+/***************************Main - Exibição do produto************************/
+main{
+    display: flex;
+}
+.imgMain{
+    width: 100%;
+    border-radius: 5%;
+    margin-bottom: 2em;
+}
+
+.divImgsMin{
+    display: flex;
+    justify-content: space-between;
+}
+
+.divImgsMin a{
+    width: 20%;
+}
+
+.imgMin{
+    width: 100%;
+    border-radius: 10%;
+    
+}
+
+/************************Galeria****************************/
+
+
+.boxMainGalery{
+    display: none;
+}
+
+.boxMainGalery:target{
+    position: fixed;
+    display:block;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(64,64,64,.5);
+}
+.boxGalery{
+    width: 50%;
+    margin: 0 auto;
+}
+.boxGalery > img{
+    width: 100%;
 }

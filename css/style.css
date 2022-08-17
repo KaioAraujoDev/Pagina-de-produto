@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@500&display=swap");
 body {
   font-family: "Kumbh Sans", sans-serif;
@@ -114,17 +115,76 @@ header .divPerfil {
   background: none;
   border: none;
 }
+.cardCart .divItem button:hover {
+  cursor: pointer;
+}
 .cardCart .divItem .iconRemove {
   width: 0.85em;
 }
 .cardCart .btn {
-  background: orange;
+  background: hsl(26deg, 100%, 55%);
   border: none;
   margin: 0 auto;
+  color: white;
+  font-weight: 600;
+  padding: 1em 7em;
+  border-radius: 0.5em;
+}
+.cardCart .btn:hover {
+  cursor: pointer;
 }
 
 .imgPerfil {
   width: 35%;
   border: 1px solid hsl(26deg, 100%, 55%);
   border-radius: 50%;
+}
+
+/***************************Main - Exibição do produto************************/
+main {
+  display: flex;
+}
+
+.imgMain {
+  width: 100%;
+  border-radius: 5%;
+  margin-bottom: 2em;
+}
+
+.divImgsMin {
+  display: flex;
+  justify-content: space-between;
+}
+
+.divImgsMin a {
+  width: 20%;
+}
+
+.imgMin {
+  width: 100%;
+  border-radius: 10%;
+}
+
+/************************Galeria****************************/
+.boxMainGalery {
+  display: none;
+}
+
+.boxMainGalery:target {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 64, 64, 0.5);
+}
+
+.boxGalery {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.boxGalery > img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
